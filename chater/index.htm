@@ -1,0 +1,882 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+<title>Общий чат</title>
+<meta name="description" content="Чат где всем рады, чат где весело общаться, чат где добрые админы! Делающие для пользователей бесплатные услуги!!!">
+<meta name="keywords" content="чат, веб, вэб, chatlist, chat, web, сервис, бесплатный, сервис чатов">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="icon" type="image/vnd.microsoft.icon" href="../favicon.ico">
+<!--[if IE 6]>
+<link rel="stylesheet" href="/_inc/css/ie6.css"/>
+<![endif]-->
+<script>
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script>
+var pageTracker = _gat._getTracker("UA-5281995-2");
+pageTracker._trackPageview();
+</script>
+<style type="text/css">
+.fr{float:right;}
+.fl{float:left;}
+fieldset{margin:0;padding:5px;font-family:Arial;font-size:13px;color:#ffffff;border: 2px solid #444444;}
+.box{background-color:#111111;border:1px solid #444444;margin:0;padding:1px;}
+.box1{background-color:#111111;margin:0;padding:1px;}
+.box2{background-color:#444444;margin:0;padding:1px;}
+legend{background-color:#111111;border:3px double #444444;text-align:left;/*text-shadow:black 1px 1px 1px;*/}
+table{margin:0;font-family:Arial;font-size:13px;}
+td{vertical-align:middle;margin:0;padding:0;white-space:nowrap;}
+table.psy_table{width:100%;margin:0;font-family:Arial;font-size:13px;color:#ffffff;}
+table.psy_table td{vertical-align:middle;text-align:center;white-space:nowrap;padding-left:5px;padding-right:5px;}
+table.psy_table td.small{padding-left:0px;padding-right:0px;width:16px;}
+hr{border-style:double;border-color:#444444;}
+select.clrs{width:70px;}
+select,input.text{width:128px;line-height:15px;font-family:Arial;font-size:12px;color:#ffffff;border:1px solid #444444;background-color:#222222}
+textarea{resize:none;font-family:Arial;font-size:12px;color:#ffffff;border:1px solid #444444;height:45px;width:128px;background-color:#222222;}
+button,input.button{width:100px;font-family:Arial;font-weight:bold;font-size:12px;color:#ffffff;border-color:#000000;background-color:#000000;background:url(../_img/000000.gif) repeat-x center;}
+body,.body{margin:0;font-family:Arial;font-size:13px;background-color:#000000;background-image:url(../main/bg/bg_1677618564.jpeg);background-attachment:fixed;}
+form,h4{margin:0;}
+div{margin:0;padding:0;}
+div.nr,#active,.bold{font-weight:bold;}
+.current{font-weight:bold;text-decoration:underline;}
+img{border:0;margin:0;vertical-align:middle;}
+img.sm{cursor:pointer;}
+img.sm:hover,img.smiehover{cursor:pointer;background-color:#444444;}
+span.smset,a.smset{font-family:Arial;font-size:10px;text-decoration:none;cursor:pointer;}
+span.smset:hover,a.smsetiehover,span.smsetiehover{background-color:#444444;cursor:pointer;text-decoration:underline;}
+span.nick:hover,span.nickiehover{cursor:pointer;text-decoration:underline;}
+.smset{font-family:Arial;font-size:10px;}
+span.text{font-family:Arial;font-size:13px;color:#ffffff;}
+thead{background-color:#444444;}
+.tdobject{text-align:center;border:1px solid #444444}
+.tddata{text-align:center;width:100%;}
+.tddatafcs{text-align:left;width:auto;font-weight:bold;white-space:normal;}
+a{border:0;margin:0;color:#ffffff;}
+a.text{text-decoration:none;}
+p{margin:0;}
+.hidden{display:none;}
+.bonus{z-index:10;}
+.popup{position:fixed;top:50%;left:50%;z-index:2000;}
+.popup fieldset{position:absolute;top:1px;left:1px;bottom:1px;right:1px;}
+.popup .content{text-align:center;}
+.popup .content table{width:100%;vertical-align:middle;}
+.popup .buttons{height:20px;border-top:2px solid #444444;text-align:center;padding-top:3px;position:absolute;left:6px;right:6px;bottom:7px;}
+.alert-confirm{width:400px;height:130px;margin:-58px 0 0 -200px;}.alert-confirm .content-td{height:40px;}.alert-confirm .content{/*max-height:52px;*/overflow-y:auto;}
+.alert2-confirm{width:500px;height:170px;margin:-85px 0 0 -250px;}.alert2-confirm .content-td{height:100px;}.alert2-confirm .content{max-height:104px;overflow-y:auto;}
+.kick-confirm{width:400px;height:140px;margin:-70px 0 0 -200px;}.kick-confirm .content-td{height:40px;}.kick-confirm .content{max-height:75px;overflow-y:auto;}
+.ban-confirm{width:400px;height:170px;margin:-80px 0 0 -200px;}.ban-confirm .content-td{height:90px;}.ban-confirm .content{max-height:115px;overflow-y:auto;}
+.punish-confirm{width:400px;height:190px;margin:-95px 0 0 -200px;}.punish-confirm .content-td{height:110px;}.punish-confirm .content{max-height:135px;overflow-y:auto;}
+#reason{width:99%;height:16px;}
+#modal{position:fixed;top:0;left:0;bottom:0;right:0;background-color:black;z-index:1900;}
+/*border:1px solid red;*/
+/*#infoContentCPA {position:absolute;left:0;right:0;top:0;bottom:0;}*/
+#infoContentCPA table{width:100%;}
+#infoContentCPA td{height:auto;background-color:#ccc;padding:5px;vertical-align:top;white-space:normal;}
+#infoContentCPA a{color:black;}
+#infoContentCPA div{overflow:hidden;}
+#infoContentCPA .name{font-size:18px;}
+#infoContentCPA .desc{text-decoration:none;}
+#msg > div,.body > div{overflow:hidden;}
+#loginNote{text-align: center;line-height: 45px;}
+html,body{margin:0;padding:0;height:100%;}
+html{overflow:hidden;}
+/*/////////////////////////////////*/
+#inputForm{height:85px;position:relative;}
+.box-inner{position:absolute;top:0;right:0;bottom:0;left:0;margin:10px 1px 1px 1px;border:2px solid #444444;z-index:1;}
+.box-header{position:absolute;top:1px;left:7px;border:3px double #444444;background-color:#111111;z-index:2;font:13px Arial;color:#ffffff;padding:0 63px 0 3px;height:19px;}
+.box-container,.box-menu2{position:absolute;top:0;right:0;bottom:0;left:0;margin:28px 10px 10px 10px;z-index:3;}
+.box-select{position:absolute;top:4px;left:0;width:100px;}
+.box-select select{width:100px;margin:2px 0;}
+.box-buttons button{width:100px;margin:1px 0;}
+.box-buttons{position:absolute;top:4px;right:0;width:100px;}
+.box-input{position:absolute;top:4px;left:100px;right:100px;padding:0 5px 0 3px;}
+.box-input textarea{width:100%;height:42px;padding:0;margin:1px 0 0 0;}
+.divUpload{width:100%;height:24px;font:13px Arial;color:#ffffff;margin:-1px 0 0 0;overflow:visible;}
+.divUpload div{line-height:24px;}
+.divAudio{height:24px;font:13px Arial;color:#ffffff;margin:-1px 0 0 0;overflow:visible;position:relative;}
+.audioText{position:absolute;top:0;left:0;width:100%;}
+.audioTextContainer{position:absolute;top:0;right:0;bottom:0;left:100px;}
+.box-menu{width:60px;height:21px;position:absolute;top:0;right:0;margin:-1px -1px 0 0;background-color:#111111;}
+.box-menu button{width:100%;}
+.box-menu1{position:absolute;top:-3px;right:-223px;border:1px solid #444444;background-color:#111111;z-index:2;font:13px Arial;color:#ffffff;padding:1px 64px 1px 4px;height:21px;width:149px;}
+.box-menu1 button{width:30px;position:absolute;top:0;bottom:0;margin:1px;}
+.box-menu2 table,button{width:100%;}
+.box-menu2 table{margin:15px 0 0 0;}
+#progress{width:200px;height:20px;border:1px solid #444444;}
+#progress > .bar{width:0%;height:20px;background-color:#444444;}
+</style>
+<script src="../share/share.js" charset="utf-8"></script>
+<script src="../_inc/js/jquery.js"></script>
+<script src="../_inc/js/lib/handlebars.js"></script>
+<script src="../_inc/js/core.js"></script>
+<!-- <script src="/_inc/js/lib/jquery.cookie.js"></script> -->
+<script src="../_inc/js/lib/js.cookie.js"></script>
+<script src="../_inc/js/showMusic.js"></script>
+<script src="../_inc/js/addCloseCross.js"></script>
+<script src="../_inc/js/flashDetect.js"></script>
+<script src="../_inc/js/buildMusicOptions.js"></script>
+<script src="../_inc/js/boxRemove.js"></script>
+<!-- <script src="/_inc/js/getCookie.js"></script> -->
+<script src="../_inc/js/paint.js"></script>
+<script src="../_inc/js/psy_add_colon.js"></script>
+<script src="../_inc/js/psy_for.js"></script>
+<script src="../_inc/js/login.js"></script>
+<script src="../_inc/js/validate.js"></script>
+<script src="../_inc/js/nickList.js"></script>
+<script src="../_inc/js/nickTruncate.js"></script>
+<script src="../_inc/js/clearMsg.js"></script>
+<script src="../_inc/js/clearMsgAndNicks.js"></script>
+<script src="../_inc/js/inputFormBuildCmdMenu.js"></script>
+<script src="../_inc/js/inputFormBuildCndMenu.js"></script>
+<script src="../_inc/js/inputFormSetStatus.js"></script>
+<script src="../_inc/js/ui.js"></script>
+<script src="../_inc/js/showSmiles.js"></script>
+<script src="../_inc/js/smilesPermit.js"></script>
+<script src="../_inc/js/smilesClear.js"></script>
+<script src="../_inc/js/inArray.js"></script>
+<script src="../_inc/js/setSmile.js"></script>
+<script src="../_inc/js/picUpload.js"></script>
+<script src="../_inc/js/audioLinkToggle.js"></script>
+<script src="../_inc/js/showNews.js"></script>
+<script src="../_inc/js/translit.js"></script>
+<script src="../_inc/js/engRus.js"></script>
+<script src="../_inc/js/trivia.js"></script>
+<script src="../_inc/js/leet.js"></script>
+<script src="../_inc/js/textareaSubmit.js"></script>
+<script src="../_inc/js/cndChange.js"></script>
+<script src="../_inc/js/send.js"></script>
+<script src="../_inc/js/nickMenu.js"></script>
+<script src="../_inc/js/getOffsets.js"></script>
+<script src="../_inc/js/audioLinkSend.js"></script>
+<script src="../_inc/js/delMsg.js"></script>
+<script src="../_inc/js/bonus.js"></script>
+<script src="../_inc/js/punish.js"></script>
+<script src="../_inc/js/jquery.path.js"></script>
+<script src="../_inc/js/logoChange.js"></script>
+<script src="../_inc/js/framesPosition.js"></script>
+<script src="../_inc/js/framesResize.js"></script>
+<script src="../_inc/js/psy_set_tag.js"></script>
+<script src="../_inc/js/musicAdd.js"></script>
+<script src="../_inc/js/musicDel.js"></script>
+<script src="../_inc/js/setCookie.js"></script>
+<script src="../_inc/js/scrollSmile.js"></script>
+<script src="../_inc/js/inputMenu.js"></script>
+<script src="../_inc/js/cmdChange.js"></script>
+<script src="../_inc/js/lib/jquery.ui.widget.js"></script>
+<script src="../_inc/js/lib/jquery.fileupload.js"></script>
+<script src="../_inc/js/lib/jquery.iframe-transport.js"></script>
+<script src="../_inc/js/popup.js"></script>
+<script src="../_inc/js/sys.js"></script>
+<script src="../_inc/js/info.js"></script>
+<script src="../_inc/js/antiflood.js"></script>
+<script src="../_inc/js/msg.js"></script>
+<script src="../_inc/js/lpc.js"></script>
+<script src="../_inc/js/lib/swfobject.js"></script>
+<script src="../_inc/js/lib/modernizr.js"></script>
+<script src="../_inc/js/player.js"></script>
+<script src="../_inc/js/webrtc.js"></script>
+<!-- -->
+<script src="../_inc/js/lib/fp.min.js"></script>
+<script src="../_inc/js/lib/jquery.base64.min.js"></script>
+<script src="../_inc/js/lib/platform.js"></script>
+<script>
+////////
+function popupContentChange(data)
+{
+	$('#alert').css('height','250px');
+	$('#alert #legend').html(data.title);
+	$('#alert .content').html(data.content);
+}
+////////
+/* <![CDATA[ */
+$.ajaxSetup({error:function(xhr,ajaxOptions,thrownError){debug='jQuery error: '+ajaxOptions+'|'+thrownError;}});
+var main=window;
+var bannerCount=0;
+var bannerTime=0;
+//var autoplay="";
+/////////////////////////////////////
+//var flashvars='skin=/_inc/swf/simple.swf';
+//if(autoplay){flashvars='skin=/_inc/swf/simple.swf&file='+autoplay+'&type=sound&duration=-1&autostart=true';}
+//var playerHTML='<object id="player" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="186" height="20" style=""><param name="movie" value="/_inc/swf/player.swf" /><param name="allowscriptaccess" value="always" /><param name="quality" value="best" /><param name="flashvars" value="'+flashvars+'" /><param name="wmode" value="opaque" /><param name="play" value="true" /><embed name="player" wmode="opaque" type="application/x-shockwave-flash" pluginspage="http://get.adobe.com/flashplayer/" width="186" height="20" src="/_inc/swf/player.swf" allowscriptaccess="always" flashvars="'+flashvars+'" quality="best" play="true"></embed></object>';
+/////////////////////////////////////
+var operator='Оператор';
+var mysound;
+//var psy_scroll_enable=false;
+var req;
+var connectionLED;
+var lm=0;
+var scrollHeight=0;
+var uid=false;
+var room="main";
+var myStatus;
+var myId;
+var stop=false;
+//var psy_scroll_monitor_enable;
+var msgTimeout;
+var smileTimeout;
+//var loginRequestSent=false;
+//var logoutRequestSent=false;
+var debug;
+/////////////переменные открываемых окон
+var mail;
+var guest;
+/////////////
+var chatSmile;
+var mySmiles;
+var smileSetName;
+var smileSetDescr;
+var smileSetContent;
+/////////////
+var musName;
+var musAddr;
+var musId;
+/////////////
+var msgPrevious='';
+/////////////переменные бонусов
+var color='ffffff';
+var bonusTimer;
+/////////////
+var sysmsg=new Array("ffffff","Arial","13");
+var windowOpenFeature='height=640,width=1024,scrollbars=yes';
+var s=Array("Никто","Пользователь","Привилегированный Пользователь","Администратор","Элита");
+var msgareaHTML='<div style=\"color:#ffffff;font-family: Arial;font-size: 13px;font-weight:bolder;font-style:italic;position:absolute;top:50%;text-align:center;width:100%;\" id=\"sysmsg\">Сообщения можно увидеть только после входа в чат...</div>';
+var pattern=new RegExp("(ht|f)tp(s)?\:\/\/([a-z0-9\-\.\_\pL]+)(\:\d{1,5})?(\/([a-z0-9\-\.\@\#\%\&\_\+\=\/\:\?\,\~\;\|\*\(\)]+)?)?");
+//var data2=false;
+//var smilesPermitText;
+//var smilesPermitLevel=7;
+var uploadPermitText;
+var watcher=0;/////////////////////////////sound cache
+var sound=document.createElement('img');
+sound.src='/main/sound/bassbeat.mp3';
+/////////////////////////////////////
+(new Image()).src='/_img/conny.gif';
+(new Image()).src='/_img/conng.gif';
+/////////////////////////////////////
+musName=new Array("","181.FM - The Buzz","300km/h","Bassdrive","BlitzRadio.FM","Brainfck","CHANNEL N5","ChroniX Aggression","DUBTHUGZ Radio","DarkPsy","Fantasy-Anime Radio","Japan-A-Radio","Post-Hardcore RADIO","RantRadio Industrial","RotterdamTerror","WVUA New Rock 90.7 FM","dubstep.fm","Серебряный Дождь");musAddr=new Array("","http://relay2.181.fm:8126/;","http://radio.promodeejay.net:8000/300kmh","http://shouthost.com.17.streams.bassdrive.com:8200/;","http://server12.blitz-stream.de:8000/;","http://radio.promodj.com:8000/brainfck-192","http://radio.promodeejay.net:8000/channel5","http://scfire-mtc-aa04.stream.aol.com:80/stream/1039","http://uk1.internet-radio.com:15634/;","http://198.154.106.101:8624/;","http://animeserver.net:8000/anime","http://64.62.194.40:9010/;","http://109.234.157.154:8000/posthardcore","http://broadcast.rantradio.com:8888/;","http://hardcore.rtr.fm:8000/hardcore","http://wvuafm.serverroom.us:9308/;stream.mp3","http://72.232.40.182:80/;","http://radiosilver.corbina.net:8000/silver128.mp3");musId=new Array("","60","5","58","61","63","6","19","49","54","44","34","47","59","62","31","56","38");/* ]]> */
+/////////////////при успешной прогрузки страницы
+$(document).ready(function(){
+	window.popup.open({t:core.templates.fp,id:'alert',d:{legend:'Загрузка…',content:''},b:[],c:'alert-confirm'});
+	///////////////////////////////
+	framesPosition(((typeof Cookies.get('nick_frame')!='undefined')?Cookies.get('nick_frame'):false));
+	//framesPosition(getCookie('nick_frame'));
+	framesResize();
+	//console.log(window.screen);
+	$(window).resize(function(){framesResize();});
+	connectionLED=$('#connectionLED');
+	//psy_scroll_monitor_enable=setInterval(scrollMonitor,10);
+	//document.getElementById('poop').doHang(55555555555555566);
+	$('.box-menu').bind('mouseenter',function(){clearTimeout(hideMenu1Timeout);inputMenu.show1();});
+	$('.box-header').bind('mouseleave',function(){hideMenu1Timeout=setTimeout(inputMenu.hide1,2000);});
+	$('.box-menu1').bind('mouseenter',function(){clearTimeout(hideMenu1Timeout);});
+	$('.box-menu2').bind('mouseenter',function(){clearTimeout(hideMenu2Timeout);});
+	$('.box-menu2').bind('mouseleave',function(){hideMenu2Timeout=setTimeout(inputMenu.hide2,5000);});
+	//$('body').append(result);
+	//$(result).modal().open();
+	//popup.open({t:alertTemplate,id:'alert',d:{"legend":"TEST"},b:[{'n':'OK','f':function(){alert('pass');}},{'n':'Отмена','f':function(){popup.close({id:'alert'});}}]});
+	showMusic(registry.player.autoplay);
+	player.init('sound',false);
+	///////////
+	/*
+	findIPsWithWebRTC().then(ipInfo => {
+		console.log(ipInfo);
+		data2=
+		//alert();
+	})
+	.catch(error => {
+		console.log('error');
+	    // Handle/report error
+	});
+	*/
+	if(!registry.globalBan)
+	{
+		if(!registry.chatBan)
+		{
+			if(!registry.inoagent)
+			{
+				//data2Get();
+				webrtc.init();
+				///////////
+				//var data2Cnt=0;
+				//var data2int=setInterval(function(){
+				webrtc.interval=setInterval(function(){
+					//if(data2!=false||data2Cnt>10)
+					//console.log(webrtc.count);
+					if(webrtc.ips!=false||webrtc.count>10)
+					{
+						//console.log(webrtc.count);
+						clearInterval(webrtc.interval);
+						///////////
+						new Fingerprint2({excludeUserAgent:true,extendedFontList:true}).get(function(result,components){
+							core.ajaxJSON('/_ajax/fp.php',{data:$.base64.encode(encodeURIComponent(JSON.stringify(components))),platform:$.base64.encode(encodeURIComponent(JSON.stringify(platform))),data2:$.base64.encode(encodeURIComponent(JSON.stringify(webrtc.ips)))},
+							function(data){
+								registry.fp=data.result;
+								popup.close({id:'alert'});
+								msg.pick.init();								$('#loginNote').addClass('hidden');
+								$('#loginForm').removeClass('hidden');
+								ui.inputFocus();
+							},
+							function(data){
+								//console.log(data);
+								core.ajaxJSON('/jserror.php',{data:JSON.stringify(data)},function(){},function(){});
+								popup.close({id:'alert'});
+							});
+						});
+						///////////
+					}
+					else{webrtc.count++;}
+				},500);
+			}
+			else
+			{
+				if(registry.inoagent>1)
+				{
+					popupContentChange({title:'Стоп!',content:'<h3>Your chat access permission has been revoked. Have a nice day!</h3><h3>Разрешение Вам на доступ к чатам было отозвано. Всего наилучшего!</h3>'});
+				}
+				else
+				{
+					popupContentChange({title:'Стоп!',content:'<scr'+'ipt src="/_inc/js/inoagent.js"></sc'+'ript><sc'+'ript src="/_inc/js/validate.js"></scr'+'ipt><scr'+'ipt>var mailPattern=/^([0-9a-z\-\_\.]{1,32}\@[0-9a-z\-]{1,32}\.[0-9a-z\-\_\.]+)$/i;</scr'+'ipt><h1><img src="/_img/stopl.gif"/>&nbsp;&nbsp;&nbsp;Стоп! Stop!&nbsp;&nbsp;&nbsp;<img src="/_img/stopr.gif"/></h1><h3>You have been detected as a foreign agent!</h3><h3>You are required to provide your real e-mail address in order to proceed further:</h3><h3>Вас определили как иностранного агента!</h3><h3>Вам необходимо предоставить Ваш реальный адрес электронной почты, чтобы пройти далее:</h3><p><input type="hidden" name="room" value="'+room+'"/><input type="text" name="email" class="text" placeholder="login@mail.ru"/><br/><br/><button class="button" onclick="inoagent.mail();">OK</button></p><h3>You will recieve a code to confirm your e-mail.</h3><h3>Вам на электронную почту придет код для подтверждение.</h3>'});
+					$('#alert').css('height','440px').css('margin-top','-200px');
+				}
+			}
+		}
+		else
+		{
+			var banData=JSON.parse(registry.chatBan);
+			popupContentChange({title:'Стоп!',content:'<h2>Вход воспрещён!</h2><center><table style=""><tr><td class="tdobject" style="width:30%;">Адрес:</td><td class="tddatafcs" style="width:70%;">'+banData.ip+'</td></tr><tr><td class="tdobject">Дата окончания:</td><td class="tddatafcs">'+banData.date+'</td></tr><tr><td class="tdobject">Причина:</td><td style="white-space:pre-wrap;font-weight:normal;">'+decodeURIComponent(escape(window.atob(banData.reason)))+'</td></tr></table></center><h3>Поскольку вас не хотят сейчас видеть в этом чате, мы предлагаем вам посетить <a href="/main/">Главный Чат!</a></h3><h3>Если вы хотите общаться по своим правилам, зарегистрируйте свой чат!</h3><button class="button" style="margin-left:auto;margin-right:auto;width:200px;display:block;" onclick="window.open(\'/register.php\',\'\',\'height=640,width=1024,scrollbars=yes\');return false;">РЕГИСТРАЦИЯ ЧАТА</button>'});
+		}
+	}
+	else
+	{
+		var banData=JSON.parse(registry.globalBan);
+		popupContentChange({title:'Стоп!',content:'<h3>Мы Вас поздравляем! Доступ к чатам Вам закрыт!</h3><center><table style=""><tr><td class="tdobject" style="width:30%;">Адрес:</td><td class="tddatafcs" style="width:70%;">'+banData.ip+'</td></tr><tr><td class="tdobject">Дата окончания:</td><td class="tddatafcs">'+banData.date+'</td></tr><tr><td class="tdobject">Причина:</td><td style="white-space:pre-wrap;font-weight:normal;">'+decodeURIComponent(escape(window.atob(banData.reason)))+'</td></tr></table></center><h3>Если Вы считаете, что это ошибка, напишите администратору на: <a href="mailto:'+banData.mail+'?subject=banid:'+banData.banid+'">'+banData.mail+'</a></h3>'});
+	}
+	///////////
+});
+var menu2={
+	settings:
+	{
+		text:'Настройки',
+		f:function(){window.open('/settings.php?room='+room+'&uid='+uid+'&fp='+registry.fp,'',windowOpenFeature);inputMenu.hide2();}
+	},
+	admin:
+	{
+		text:'Администрирование',
+		f:function(){window.open('/admin.php?room='+room+'&uid='+uid,'',windowOpenFeature);inputMenu.hide2();}
+	},
+	bonus:
+	{
+		text:'Бонусы',
+		f:function(){window.open('/mybonus.php?room='+room+'&uid='+uid,'',windowOpenFeature);inputMenu.hide2();}
+	},
+	mymsg:
+	{
+		text:'Фразы',
+		f:function(){window.open('/mymsg.php?room='+room+'&uid='+uid,'',windowOpenFeature);inputMenu.hide2();}
+	},
+	img:
+	{
+		text:'Изображение',
+		f:function(){picUpload.show();}
+	},
+	mail:
+	{
+		text:'Почта',
+		f:function(){mail=window.open('/mail.php?room='+room+'&uid='+uid+'&fp='+registry.fp,'',windowOpenFeature);inputMenu.hide2();}
+	},
+	audio:
+	{
+		text:'Аудио ссылка',
+		f:function(){audioLink.show();}
+	},
+	webcam:
+	{
+		text:'Веб-камера',
+		f:function(){window.open('/webcam.php?room='+room+'&uid='+uid+'&fp='+registry.fp,'',windowOpenFeature);inputMenu.hide2();}
+	},
+	vioce:
+	{
+		text:'Звукозапись',
+		f:function(){window.open('/voice.php?room='+room+'&uid='+uid+'&fp='+registry.fp,'',windowOpenFeature);inputMenu.hide2();}
+	},
+	news:
+	{
+		text:'Новости',
+		f:function(){showNews();inputMenu.hide2();}
+	},
+	music:
+	{
+		text:'Музыка',
+		f:function(){showMusic(registry.player.autoplay);inputMenu.hide2();}
+	}
+};
+var menu2Exclude=[];
+var hideMenu1Timeout;
+var hideMenu2Timeout;
+var registry={
+	fp:'',
+	iac:'',
+	globalBan:false,
+	chatBan:false,
+	inoagent:false,
+	reasons:['Флуд','Спам','Неадекватность','Игнорирование требований администрации'],
+	bantimes:{
+		adm:{300:'5 минут',600:'10 минут',900:'15 минут',1800:'30 минут',3600:'1 час',7200:'2 часа',10800:'3 часа',21600:'6 часов',43200:'12 часов',86400:'1 день',172800:'2 дня',259200:'3 дня',604800:'1 неделя',1209600:'2 недели',2592000:'1 месяц',5184000:'2 месяца',7862400:'3 месяца',15811200:'6 месяцев',31536000:'1 год'},
+		pu:{300:'5 минут',600:'10 минут',900:'15 минут',1800:'30 минут',3600:'1 час'}
+	},
+	bonus:{
+		img:['bugagasik','bugagasikgirl','bugagasikblonde','bugagasikgreen','bugagasikbase','bugagasikblue','bugagasikpurple','bugagasikred','bugagasikwhite','bugagasiklblue','bugagasikacid','bugagasikyellow','bugagasikorange','bugagasiksalad','bugagasikturq','bugagasikmblue','bugagasikdpurple','bugagasikolive']
+		//img:['unicorn']
+		//img:['christmas-tree']
+	},
+	statuses:{2:[0,1],3:[0,1,2],4:[0,1,2,3,4]},
+	smile:{
+		permitLevel:7,
+		permitText:false
+	},
+	player:{
+		autoplay:''
+	},
+	punished:{
+		data:{1:0,2:0,3:0},
+		timer:20
+	},
+	/////////////////
+	confirm:function(window,style,legend,content,func){
+		window.popup.open({t:core.templates.alert,id:'alert',d:{legend:legend,content:content},b:[{'n':'OK','f':func},{'n':'Отмена','f':function(){}}],c:style+'-confirm'});
+	},
+	alert:function(window,style,legend,content){
+		window.popup.open({t:core.templates.alert,id:'alert',d:{legend:legend,content:content},b:[{'n':'OK','f':function(){}}],c:style+'-confirm'});
+	}
+};
+function test()
+{
+	//console.log(registry.punished);
+	//console.log(Date.now()/1000);
+	/*
+	$.ajax({
+			url:'/check.php',
+			cache:false,
+			dataType:'json',
+			data:{room:room,uid:uid,type:'upload'},
+			success:function(data){
+				popup.open({t:alertTemplate,id:'alert',d:{legend:'Пасхальное яйцо!',content:'<table><tr><td style="width:100%;white-space:normal;vertical-align:middle;">Чё за хуйня?</td></tr></table>'},b:[{'n':'OK','f':test1},{'n':'Отмена','f':function(){}}]});
+			}
+	});
+	*/
+}
+//var test1=function(){console.log('pass');};
+/////////////////////////
+//var template=Handlebars.compile(source);
+//var data={"legend":"TEST"};
+//var result=template(data);
+//scroll debug
+//var st=$('#msgContainer').scrollTop();var sh=$('#msg').height();var ch=$('#msgContainer').height();var ss=sh-(ch+st);var ss1=Math.ceil(ss / 20);alert(st+'|'+sh+'|'+ch+'|'+ss+'|'+ss1+' '+debug+'|'+msgTimeout);
+</script>
+</head>
+<body onclick="if($('#nickmenu')){$('#nickmenu').remove();}" ondblclick="test()">
+<!-- Yandex.Metrika counter -->
+<script>
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter9984055 = new Ya.Metrika({id:9984055,
+                    //webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="../watch/9984055" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<div style="position:absolute;top:-100px"><div id="sound"></div></div>
+<object id="poop" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="0" height="0" style=""><param name="movie" value="../_inc/swf/HangOn.swf"><param name="allowscriptaccess" value="always"><param name="quality" value="best"><param name="flashvars" value=""><param name="wmode" value="opaque"><param name="play" value="true"><embed name="poop" wmode="opaque" type="application/x-shockwave-flash" pluginspage="http://get.adobe.com/flashplayer/" width="0" height="0" src="../_inc/swf/HangOn.swf" allowscriptaccess="always" flashvars="" quality="best" play="true"></object><div id="container">
+	<div id="msgBanner" style="position:absolute;top:0;z-index:1;max-width:745px;max-height:124px;" class="box"><fieldset><legend id="legend">Объявления </legend><!-- Яндекс.Директ -->
+<noindex><div id="infoContent"></div></noindex>
+<script>
+var yandexAd={
+	limit:1,
+	init:function(){
+		bannerTime=yandexAd.getTime();
+		//console.log(bannerTime);
+		$('#msgBanner').removeClass('hidden');
+		Ya.Context.AdvManager.render({
+			blockId: "R-A-93901-3",
+			renderTo: "infoContent",
+			async: true
+		});
+	},
+	getTime:function(){
+		return Math.round((new Date()).getTime()/1000);
+	},
+	rotate:function(){
+		bannerCount++;
+		//console.log(bannerCount);
+		if(bannerCount>=10)
+		{
+			var time=yandexAd.getTime();
+			//console.log(time-bannerTime);
+			if(time-bannerTime>=600)
+			{
+				bannerCount=0;
+				yandexAd.init();
+				info.init(yandexAd.limit);
+			}
+		}
+	}
+};
+(function(w, d, n, s, t) {
+	w[n] = w[n] || [];
+	w[n].push(function() {
+		yandexAd.init();
+	});
+	t = d.getElementsByTagName("script")[0];
+	s = d.createElement("script");
+	s.type = "text/javascript";
+	s.src = "//an.yandex.ru/system/context.js";
+	s.async = true;
+	t.parentNode.insertBefore(s, t);
+})(this, this.document, "yandexContextAsyncCallbacks");
+/*
+(function(w, d, n, s, t){
+	w[n] = w[n] || [];
+	w[n].push(function(){
+		yandexAd.init();
+	});
+	t = d.documentElement.firstChild;
+	s = d.createElement('script');
+	s.type = 'text/javascript';
+	s.src = '//an.yandex.ru/system/context.js';
+	s.setAttribute('async', 'true');
+	t.insertBefore(s, t.firstChild);
+})(window,document,'yandex_context_callbacks');
+*/
+$(document).ready(function(){
+	info.init(yandexAd.limit);
+});
+</script>
+</fieldset></div>
+	<div id="popupContainer"></div>
+<div id="msgContainer" style="position:absolute;top:0;left:0;overflow:auto;white-space:normal;overflow-x:hidden;overflow-y:scroll;">
+	<div id="msg" ondblclick=""></div>
+</div>
+<div id="nicksContainer" style="position:absolute;top:0;right:0;width:220px;border: 0px solid white;overflow:auto;white-space:normal;overflow-x:hidden;overflow-y:scroll;">
+<div id="main" style="width:203px;">
+	<!-- кнопки -->
+	<div class="box">
+	<table id="buttons" style="margin-right:auto;margin-left:auto;width:200px;">
+				<tr>
+			<td><button style="width:100%;" onclick="window.open('/help.php?room=main','','height=640,width=1024,scrollbars=yes');">Помощь</button></td>
+			<td><button style="width:100%;" onclick="window.open('/rules.php?room=main','','height=640,width=1024,scrollbars=yes');">Правила</button></td>
+		</tr>
+		<tr>
+			<td><button style="width:100%;" onclick="guest=window.open('/guest.php?room=main&uid='+uid+'&fp='+registry.fp,'','height=640,width=1024,scrollbars=yes');">Гостевая</button></td>
+			<td><button style="width:100%;" onclick="window.open('/archive.php?room=main&uid='+uid,'','height=640,width=1024,scrollbars=yes');">Архив</button></td>
+		</tr>
+		<tr>
+			<td><button style="width:100%;" onclick="window.open('/rate.php?room=main&uid='+uid,'','height=640,width=1024,scrollbars=yes');">Рейтинг</button></td>
+			<td><button style="width:100%;" onclick="window.open('/whowas.php?room=main&uid='+uid,'','height=640,width=1024,scrollbars=yes');">Кто был</button></td>
+		</tr>
+		<tr>
+					<td><button style="width:100%;" onclick="window.open('/gallery.php?room=main&uid='+uid,'','height=640,width=1024,scrollbars=yes');">Галерея</button></td>
+			<td><button style="width:100%;" onclick="window.open('/main3/');">v3.0 Beta</button></td>
+				</tr>
+	</table>
+	</div>
+	<!-- лого -->
+	<div id="logo" style="text-align:center;" class="box">
+			<img src="../main/logo/logo_1300950918.png" alt="[logo]" id="logoimg" oncontextmenu="return false;">
+			</div>
+	<!-- список ников -->
+	<div class="box" id="nicksconfirm">
+		<fieldset>
+			<legend ondblclick="test();"><img src="../_img/connr.gif" style="vertical-align:-2px;" id="connectionLED" title="Соединение"> В чате: <span id="inchat">0</span></legend>
+			<div style="width:100%;">
+				<table>
+					<tbody id="nicks">
+					</tbody>
+				</table>
+			</div>
+		</fieldset>
+	</div>
+	<!-- новости -->
+	<div id="newsplace">
+		<div class="box" id="newsbox">
+			<fieldset>
+				<legend>Новости <img src="../_img/del.gif" alt="X" onmouseover="this.className='smiehover';" onmouseout="this.className='sm';" onclick="boxRemove(this);"></legend>
+				<div id="news" style="width:186px;overflow:auto;"><p>Добро пожаловать!!!</p>
+<p>&nbsp;</p>
+<p>Админ:<span style="color: #ff0000;">&nbsp;Mr Admin360</span></p>
+<p><span style="color: #ffffff;">Модератор: В данном чате модераторов нет!!!</span></p>
+<p>&nbsp;</p></div>
+				<div id="author" style="width:100%;text-align:right;"><hr><em style="font-size:10px;">04-08-2014 14:34:08</em><br><strong><span style="font-size:10px;" onmouseover="this.className='smsetiehover'" onmouseout="this.className=''" onclick="window.open('/viz.php?nick=Mr+Admin360&room=chater&uid='+uid,'','height=640,width=1024,scrollbars=yes');">Mr Admin360</span></strong></div>
+				<div id="bday"></div>
+			</fieldset>
+		</div>
+	</div>
+	<!-- музыка -->
+	<div id="musicplace"></div>
+	<!-- <script>showMusic(autoplay);</script> -->
+	<!-- смайлы -->
+	<div id="smileplace"></div>
+	<!-- пригласить друзей -->
+	<div id="shareplace">
+		<div class="box" id="share">
+			<fieldset style="text-align:center;">
+			<legend>Пригласить друзей <img src="../_img/del.gif" alt="X" onmouseover="this.className='smiehover';" onmouseout="this.className='sm';" onclick="boxRemove(this);"></legend>
+			<div id="ya_share1"></div>
+<script>
+new Ya.share({element:"ya_share1",elementStyle:{"text":"Пригласить из…","type":"button","quickServices":[""]},link:"https://www.chatlist.su/",title:document.title,description:"",image:"",popupStyle:{copyPasteField:true}});</script>
+			</fieldset>
+		</div>
+	</div>
+	<!-- кнопки -->
+	<div class="box" id="button">
+		<fieldset style="text-align:center;">
+		<legend>Кнопки <img src="../_img/del.gif" alt="X" onmouseover="this.className='smiehover';" onmouseout="this.className='sm';" onclick="boxRemove(this);"></legend>
+		<!-- <a href="//top100.rambler.ru/cgi-bin/stats_top100.cgi?1500950" target="_blank"><img src="//top100-images.rambler.ru/top100/banner-88x31-rambler-gray2.gif" alt="Rambler's Top100" width="88" height="31" border="0"/></a><img src="//counter.rambler.ru/top100.cnt?1500950" alt="Rambler's Top100" style="display:none;"/> -->
+
+<!-- <a href="//top.mail.ru/jump?from=1504449" target="_blank"><img src="//dc.c1.b5.a1.top.list.ru/counter?id=1504449;t=52" border="0" height="31" width="88" alt="Рейтинг@Mail.ru"/></a> -->
+
+<!-- Yandex.Metrika informer -->
+<a href="//metrika.yandex.ru/stat/?id=9984055&from=informer" target="_blank" rel="nofollow"><img src="../informer/9984055/3_0_FFFFFFFF_FFFFFFFF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="9984055" data-lang="ru"></a>
+<!-- /Yandex.Metrika informer -->
+
+<a href="//www.yandex.ru/cy?base=0&host=www.chatlist.su" target="_blank"><img src="../cycounter?www.chatlist.su" width="88" height="31" alt="Яндекс цитирования" border="0"></a>
+
+<!--LiveInternet counter-->
+<script><!--
+document.write("<a href='//www.liveinternet.ru/stat/chatlist.su/' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t21.3;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet: показано число просмотров за 24"+
+" часа, посетителей за 24 часа и за сегодня' "+
+"border='0' width='88' height='31'\/><\/a>")//-->
+</script>
+<!--/LiveInternet-->
+
+<!-- SpyLOG -->
+<!--
+<script src="//tools.spylog.ru/counter_cv.js" id="spylog_code" counter="1093923" part="" track_links="ext" page_level="0"></script>
+<noscript>
+<a href="//u10533.96.spylog.com/cnt?cid=1093923&amp;f=3&amp;p=0" target="_blank">
+<img src="//u10533.96.spylog.com/cnt?cid=1093923&amp;p=0" alt="SpyLOG" border="0" width="88" height="31"></a>
+</noscript>
+-->
+<!--/ SpyLOG -->
+<!-- HotLog -->
+<script language="javascript">
+hotlog_js="1.0";
+hotlog_r=""+Math.random()+"&amp;s=514969&amp;im=133&amp;r="+escape(document.referrer)+"&amp;pg="+
+escape(window.location.href);
+document.cookie="hotlog=1; path=/"; hotlog_r+="&amp;c="+(document.cookie?"Y":"N");
+</script>
+<script language="javascript1.1">
+hotlog_js="1.1";hotlog_r+="&amp;j="+(navigator.javaEnabled()?"Y":"N")
+</script>
+<script language="javascript1.2">
+hotlog_js="1.2";
+hotlog_r+="&amp;wh="+screen.width+'x'+screen.height+"&amp;px="+
+(((navigator.appName.substring(0,3)=="Mic"))?
+screen.colorDepth:screen.pixelDepth)</script>
+<script language="javascript1.3">hotlog_js="1.3"</script>
+<script language="javascript">hotlog_r+="&amp;js="+hotlog_js;
+document.write("<a href='//click.hotlog.ru/?514969' target='_blank'><img "+
+" src='//hit26.hotlog.ru/cgi-bin/hotlog/count?"+
+hotlog_r+"&amp;' border=0 width=88 height=31 alt=HotLog><\/a>")
+</script>
+<noscript>
+<a href="//click.hotlog.ru/?514969" target="_blank">
+<img src="//hit26.hotlog.ru/cgi-bin/hotlog/count?s=514969&im=133" border="0" width="88" height="31" alt="HotLog"></a>
+</noscript>
+<!-- /HotLog -->
+
+<!--
+<a target="_blank" href="http://chats.top-100.ru"><img alt="Chat's Top100 Counter" src="http://chats.top-100.ru/counter?cid=12797&t=c" height="31" width="88" border="0"></a>
+-->
+
+<!--<a href="http://chat-top.spb.ru" target="_blank"><img src="http://chat-top.spb.ru/counter.php?id=2093" height="31" width="88" border="0" alt="Chat-Top.spb.ru"/></a>-->
+
+<!-- langiron.ru/all counter-->
+<!--
+<a href="http://langiron.ru/all" target="_blank"><img src="http://langiron.ru/cgi-bin/all/all.cgi?id=411" border="0" width="88" height="31" alt="langiron.ru/all Русские чаты"></a>
+-->
+<!-- langiron.ru/all counter end-->
+
+<!--
+<a href="http://top4u.ru" target="_blank"><img src="http://top4u.ru/counter.php?id=715" height="31" width="88" border="0" alt="Chat Planet"></a>
+-->
+
+<!-- Begin ProtoPlex TOP-100 -->
+<!--
+<a href="http://protoplex.ru" onclick="this.href='http://protoplex.ru/top_show/253849.html'" target="_blank">
+<img src="http://protoplex.ru/images/rating/knopa16.png" alt="ProtoPlex" width="88" height="31" border="0"></a>
+-->
+<!-- End ProtoPlex TOP-100 -->
+
+<!--<a href="http://www.a-counter.com/" target="_blank"><img src="http://www2.a-counter.kiev.ua/a/88x31x7.png?id=45927&amp;w=0&amp;c=0&amp;r=" width="88" height="31" border="0"></a>-->
+
+<!-- cy-pr.com -->
+<!--
+<a href="http://www.cy-pr.com/analysis/www.chatlist.su" target="_blank"><img src="http://www.cy-pr.com/e/www.chatlist.su_1_30.30.30.gif" height="31" width="88" border="0" alt="Информер тиц и PR" /></a>
+-->
+<!-- cy-pr.com -->
+
+<!-- Top YandeG for: `www.chatlist.su` id: `139740` -->
+<!--
+<a href="http://yandeg.ru/stat/www.chatlist.su/" target="_blank" 
+title="Статистика сайта. Показано: просмотров страниц за неделю, просмотров страниц сегодня, посетителей сегодня." 
+onclick="img=new Image();img.src='http://count.yandeg.ru/sitecnt.php?id=139740';" 
+style="text-decoration:none; font-size: 8px;">
+<script>
+document.write('<img'+
+' src="http://count.yandeg.ru/cnt.php?id=139740&amp;img=12&amp;h='+escape(document.URL)+
+'&amp;ref='+escape(document.referrer)+((typeof(screen)=='undefined')?'':
+'&amp;s='+screen.width+'*'+screen.height+
+'*'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+
+'&amp;rand='+Math.random()+
+'" width="88" height="31" border="0"'+
+' alt="Рейтинг Сайтов YandeG" />')
+</script></a>
+-->
+<!-- /Top YandeG -->
+
+<!--xtool.ru-->
+<!-- <a href="//xtool.ru" onclick="window.open('//xtool.ru/trast.php?site=chatlist.su');return false;" target="_blank" title="Трастовость xt сайта chatlist.su"><img src="//1.xtool.ru/i/?site=chatlist.su" style="border:0" alt="Анализ: траст сайта chatlist.su" width="88" height="31" /></a> -->
+
+<!--<a href="http://top.addons4u.ru" target="_blank"><img src="http://top.addons4u.ru/?act=Image&id=42" width="88" height="31" border="0"></a>-->
+
+<!-- Русский Топ Сайтов - рейтинг статистика посещаемости сайтов
+<a href="http://rutop.org/">
+<script language="javascript">
+java="1.0";
+java1=""+"refer="+escape(document.referrer)+"&page="+
+escape(window.location.href);
+document.cookie="astratop=1; path=/"; java1+="&c="+(document.cookie?"yes":"now");
+</script>
+<script language="javascript1.1">java="1.1";java1+="&java="+(navigator.javaEnabled()?"yes":"now")</script>
+<script language="javascript1.2">java="1.2";
+java1+="&razresh="+screen.width+'x'+screen.height+"&cvet="+
+(((navigator.appName.substring(0,3)=="Mic"))?
+screen.colorDepth:screen.pixelDepth)</script><script language="javascript1.3">java="1.3"</script>
+<script language="javascript">java1+="&jscript="+java+"&rand="+Math.random();
+document.write("<a href='http://rutop.org/?fromsite=1012' target='_blank'><img "+
+" src='http://rutop.org/img.php?id=1012&"+java1+"&' border=0 alt='Русский Топ Сайтов - рейтинг статистика посещаемости сайтов' width='88' height='31'></a>")</script>
+<noscript><a href="http://rutop.org/?fromsite=1012" target="_blank"><img src="http://rutop.org/img.php?id=1012" border="0" alt="Русский Топ Сайтов - рейтинг статистика посещаемости сайтов" width='88' height='31'></a></noscript>
+</a>-->
+
+<!-- /Русский Топ Сайтов - рейтинг статистика посещаемости сайтов -->
+
+<!-- <a href="//www.pr-cy.ru/analysis/www.chatlist.su" target="_blank" title="Счетчик тИЦ и PR"><img src="//counter.pr-cy.ru/prcy/www.chatlist.su" alt="PR-CY.ru" width="88" height="31" border="0" /></a> -->
+
+<!-- <a href="//whos.amung.us/stats/lyy1q4fo7o0m/" target="_blank"><img src="//whos.amung.us/widget/lyy1q4fo7o0m.png" width="88" height="31" border="0" title="Click to see how many people are online" /></a> -->
+
+<!--<a href="http://sunwave-fm.eu/" target="_blank" title="Sunwave FM — Самая солнечная онлайн радиостанция">
+<img src="http://sunwave-fm.eu/sunwave/88x31.png" width="88" height="31" border="0" alt="Sunwave FM"></a>-->
+
+<a href="//www.mozilla.com/en-US/firefox/all.html#ru" title="Get Firefox - The Browser, Reloaded" target="_blank"><img src="../_img/FF3_88x31_o.png" width="88" height="31" border="0" alt="Get Firefox"></a>
+
+<!--<a href="http://firstvds.ru/?from=25919" title="firstVDS" target="_blank"><img src="http://firstvds.ru/img/affiliate/first-88x31-11-1.gif" width="88" height="31" border="0" alt="firstVDS"/></a>-->
+
+<!-- <a href="http://hosting.reg.ru/vps/?rid=245746" title="REG.RU" target="_blank"><img src="/_img/hoster2_88x31.gif" border="0" alt="REG.RU"/></a> -->
+
+<a href="//www.chatlist.su/" target="_blank" title="Хотите такой же чат для себя? Вы можете зарегистрировать его на ChatList.SU бесплатно!"><img src="../_img/chatlist.gif" width="88" height="31" border="0" alt="ChatList.SU — Сервис Чатов"></a>
+		</fieldset>
+	</div>
+</div>
+</div>
+<div id="bottomContainer" style="position:absolute;bottom:0;height:90px;border: 0px solid white;">
+	<div id="enterForm" class="box" style="height:86px;">
+	<table style="width:100%;">
+	<tr>
+	<td style="vertical-align:top;">
+		<fieldset>
+			<legend>Вход</legend>
+			<div style="width:390px;height:48px;">
+				<table style="text-align:center;" id="loginForm" class="hidden">
+					<tr>
+						<td>Ник:</td>
+						<td><input type="text" name="nick" id="nick" class="text" value="" onkeypress="return login.submit(event);" tabindex="1"></td>
+						<td><button class="button" id="enter" style="width:60px;" onclick="login.init();">Войти</button></td>
+						<td><button onclick="window.open('/reg.php?room=main','','height=640,width=1024,scrollbars=yes');" class="button" style="width:140px;">Зарегистрироваться</button></td>
+					</tr>
+					<tr>
+						<td>Пароль:</td>
+						<td><input type="password" name="pass" id="pass" class="text" onkeypress="return login.submit(event);" tabindex="2"></td>
+						<td colspan="2"><em>Чат без регистрации</em></td>
+					</tr>
+				</table>
+				<div id="loginNote">
+					Обработка…
+				</div>
+			</div>
+		</fieldset>
+	</td>
+	<td style="width:100%;vertical-align:top;white-space:normal;" itemscope="" itemtype="http://schema.org/Thing">
+		<fieldset>
+			<legend>Описание</legend>
+			<div style="width:100%;height:48px;overflow:auto;" id="inputconfirm">
+			<div itemprop="name"><strong>Общий чат</strong></div>
+			<span itemprop="description">Чат где всем рады, чат где весело общаться, чат где добрые админы! Делающие для пользователей бесплатные услуги!!!</span>
+			</div>
+		</fieldset>
+	</td>
+	</tr>
+	</table>
+	</div>
+	<!-- -->
+	<div class="box hidden" id="inputForm">
+		<div class="box-header">
+			<span onmouseover="this.className='smsetiehover'" onmouseout="this.className=''" id="active" onclick="window.open('/settings.php?room=main&amp;uid='+uid+'&amp;fp='+registry.fp,'','height=640,width=1024,scrollbars=yes');" title="Настройки"><span id="mynick"></span></span>
+			[<strong><span id="status"></span></strong>]
+			<span id="frontbonus"></span>
+			<span id="altbonus"></span>
+			<button class="box-menu" onclick="inputMenu.show2();">МЕНЮ</button>
+			<div class="box-menu1 hidden">
+				<button style="left:0;" onclick="clearMsg();" title="Обновить">&amp;</button>
+				<!--<button style="left:31px;" onClick="scrollToggle();" title="Выкл/вкл прокрутку">&#8597;</button>-->
+				<button style="left:31px;" onclick="showSmiles(true);" title="Смайлы">(=</button>
+				<button style="left:62px;" onclick="trivia();" title="Викторина">В</button>
+				<button style="left:93px;" onclick="translit();" title="Транслит">Tr</button>
+				<button style="left:124px;width:45px;" onclick="engRus();" title="Раскладка">ru/en</button>
+				<button style="left:170px;width:45px;" onclick="leet();" title="Слэнг">1337</button>
+			</div>
+		</div>
+		<div class="box-inner"></div>
+		<div class="box-container">
+			<div class="box-select">
+				<input type="hidden" name="fwh" id="fwh" value="">
+				<input type="hidden" name="cnd" id="cnd" value="">
+				<select name="cmd" id="cmd" onchange="cmdChange.init(this.value);" value=""></select>
+				<select name="cmd2" id="cnd2" onchange="cndChange(this.value);ui.inputFocus();" value=""></select>
+			</div>
+			<div class="box-input">
+				<div class="divUpload hidden"></div>
+				<div class="divAudio hidden">Аудио ссылка:<div class="audioTextContainer"><textarea class="audioText" onkeypress="return textareaSubmit(event);"></textarea></div></div>
+				<textarea name="msg" id="input" onkeypress="return textareaSubmit(event);"></textarea>
+			</div>
+			<div class="box-buttons">
+				<button onclick="send.msg();" id="msgSend" title="ОК">ОК</button>
+				<button onclick="login.exit(false);" title="Выход">Выход</button>
+			</div>
+		</div>
+		<div class="box-menu2 hidden"></div>
+	</div>
+</div>
+</div>
+</body>
+</html>

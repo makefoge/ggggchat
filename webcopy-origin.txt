@@ -1,0 +1,336 @@
+Uri: https://informer.yandex.ru/informer/9984055/3_0_FFFFFFFF_FFFFFFFF_0_pageviews
+File Name: D:\enf\www.chatlist.su\informer\9984055\3_0_FFFFFFFF_FFFFFFFF_0_pageviews
+Content Type: image/png
+
+Uri: https://mc.yandex.ru/watch/9984055
+File Name: D:\enf\www.chatlist.su\watch\9984055
+Content Type: image/gif
+
+Uri: https://www.chatlist.su/chater/
+File Name: D:\enf\www.chatlist.su\chater\index.htm
+Content Type: text/html
+
+Uri: https://www.chatlist.su/favicon.ico
+File Name: D:\enf\www.chatlist.su\favicon.ico
+Content Type: image/x-icon
+
+Uri: https://www.chatlist.su/main/bg/bg_1677618564.jpeg
+File Name: D:\enf\www.chatlist.su\main\bg\bg_1677618564.jpeg
+Content Type: image/jpeg
+
+Uri: https://www.chatlist.su/main/logo/logo_1300950918.png
+File Name: D:\enf\www.chatlist.su\main\logo\logo_1300950918.png
+Content Type: image/png
+
+Uri: https://www.chatlist.su/_img/000000.gif
+File Name: D:\enf\www.chatlist.su\_img\000000.gif
+Content Type: image/gif
+
+Uri: https://www.chatlist.su/_img/chatlist.gif
+File Name: D:\enf\www.chatlist.su\_img\chatlist.gif
+Content Type: image/gif
+
+Uri: https://www.chatlist.su/_img/connr.gif
+File Name: D:\enf\www.chatlist.su\_img\connr.gif
+Content Type: image/gif
+
+Uri: https://www.chatlist.su/_img/del.gif
+File Name: D:\enf\www.chatlist.su\_img\del.gif
+Content Type: image/gif
+
+Uri: https://www.chatlist.su/_img/FF3_88x31_o.png
+File Name: D:\enf\www.chatlist.su\_img\FF3_88x31_o.png
+Content Type: image/png
+
+Uri: https://www.chatlist.su/_inc/js/addCloseCross.js
+File Name: D:\enf\www.chatlist.su\_inc\js\addCloseCross.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/antiflood.js
+File Name: D:\enf\www.chatlist.su\_inc\js\antiflood.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/audioLinkSend.js
+File Name: D:\enf\www.chatlist.su\_inc\js\audioLinkSend.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/audioLinkToggle.js
+File Name: D:\enf\www.chatlist.su\_inc\js\audioLinkToggle.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/bonus.js
+File Name: D:\enf\www.chatlist.su\_inc\js\bonus.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/boxRemove.js
+File Name: D:\enf\www.chatlist.su\_inc\js\boxRemove.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/buildMusicOptions.js
+File Name: D:\enf\www.chatlist.su\_inc\js\buildMusicOptions.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/clearMsg.js
+File Name: D:\enf\www.chatlist.su\_inc\js\clearMsg.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/clearMsgAndNicks.js
+File Name: D:\enf\www.chatlist.su\_inc\js\clearMsgAndNicks.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/cmdChange.js
+File Name: D:\enf\www.chatlist.su\_inc\js\cmdChange.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/cndChange.js
+File Name: D:\enf\www.chatlist.su\_inc\js\cndChange.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/core.js
+File Name: D:\enf\www.chatlist.su\_inc\js\core.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/delMsg.js
+File Name: D:\enf\www.chatlist.su\_inc\js\delMsg.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/engRus.js
+File Name: D:\enf\www.chatlist.su\_inc\js\engRus.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/flashDetect.js
+File Name: D:\enf\www.chatlist.su\_inc\js\flashDetect.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/framesPosition.js
+File Name: D:\enf\www.chatlist.su\_inc\js\framesPosition.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/framesResize.js
+File Name: D:\enf\www.chatlist.su\_inc\js\framesResize.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/getOffsets.js
+File Name: D:\enf\www.chatlist.su\_inc\js\getOffsets.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/inArray.js
+File Name: D:\enf\www.chatlist.su\_inc\js\inArray.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/info.js
+File Name: D:\enf\www.chatlist.su\_inc\js\info.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/inputFormBuildCmdMenu.js
+File Name: D:\enf\www.chatlist.su\_inc\js\inputFormBuildCmdMenu.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/inputFormBuildCndMenu.js
+File Name: D:\enf\www.chatlist.su\_inc\js\inputFormBuildCndMenu.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/inputFormSetStatus.js
+File Name: D:\enf\www.chatlist.su\_inc\js\inputFormSetStatus.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/inputMenu.js
+File Name: D:\enf\www.chatlist.su\_inc\js\inputMenu.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/jquery.js
+File Name: D:\enf\www.chatlist.su\_inc\js\jquery.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/jquery.path.js
+File Name: D:\enf\www.chatlist.su\_inc\js\jquery.path.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/leet.js
+File Name: D:\enf\www.chatlist.su\_inc\js\leet.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/lib/fp.min.js
+File Name: D:\enf\www.chatlist.su\_inc\js\lib\fp.min.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/lib/handlebars.js
+File Name: D:\enf\www.chatlist.su\_inc\js\lib\handlebars.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/lib/jquery.base64.min.js
+File Name: D:\enf\www.chatlist.su\_inc\js\lib\jquery.base64.min.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/lib/jquery.fileupload.js
+File Name: D:\enf\www.chatlist.su\_inc\js\lib\jquery.fileupload.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/lib/jquery.iframe-transport.js
+File Name: D:\enf\www.chatlist.su\_inc\js\lib\jquery.iframe-transport.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/lib/jquery.ui.widget.js
+File Name: D:\enf\www.chatlist.su\_inc\js\lib\jquery.ui.widget.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/lib/js.cookie.js
+File Name: D:\enf\www.chatlist.su\_inc\js\lib\js.cookie.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/lib/modernizr.js
+File Name: D:\enf\www.chatlist.su\_inc\js\lib\modernizr.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/lib/platform.js
+File Name: D:\enf\www.chatlist.su\_inc\js\lib\platform.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/lib/swfobject.js
+File Name: D:\enf\www.chatlist.su\_inc\js\lib\swfobject.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/login.js
+File Name: D:\enf\www.chatlist.su\_inc\js\login.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/logoChange.js
+File Name: D:\enf\www.chatlist.su\_inc\js\logoChange.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/lpc.js
+File Name: D:\enf\www.chatlist.su\_inc\js\lpc.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/msg.js
+File Name: D:\enf\www.chatlist.su\_inc\js\msg.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/musicAdd.js
+File Name: D:\enf\www.chatlist.su\_inc\js\musicAdd.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/musicDel.js
+File Name: D:\enf\www.chatlist.su\_inc\js\musicDel.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/nickList.js
+File Name: D:\enf\www.chatlist.su\_inc\js\nickList.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/nickMenu.js
+File Name: D:\enf\www.chatlist.su\_inc\js\nickMenu.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/nickTruncate.js
+File Name: D:\enf\www.chatlist.su\_inc\js\nickTruncate.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/paint.js
+File Name: D:\enf\www.chatlist.su\_inc\js\paint.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/picUpload.js
+File Name: D:\enf\www.chatlist.su\_inc\js\picUpload.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/player.js
+File Name: D:\enf\www.chatlist.su\_inc\js\player.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/popup.js
+File Name: D:\enf\www.chatlist.su\_inc\js\popup.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/psy_add_colon.js
+File Name: D:\enf\www.chatlist.su\_inc\js\psy_add_colon.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/psy_for.js
+File Name: D:\enf\www.chatlist.su\_inc\js\psy_for.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/psy_set_tag.js
+File Name: D:\enf\www.chatlist.su\_inc\js\psy_set_tag.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/punish.js
+File Name: D:\enf\www.chatlist.su\_inc\js\punish.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/scrollSmile.js
+File Name: D:\enf\www.chatlist.su\_inc\js\scrollSmile.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/send.js
+File Name: D:\enf\www.chatlist.su\_inc\js\send.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/setCookie.js
+File Name: D:\enf\www.chatlist.su\_inc\js\setCookie.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/setSmile.js
+File Name: D:\enf\www.chatlist.su\_inc\js\setSmile.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/showMusic.js
+File Name: D:\enf\www.chatlist.su\_inc\js\showMusic.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/showNews.js
+File Name: D:\enf\www.chatlist.su\_inc\js\showNews.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/showSmiles.js
+File Name: D:\enf\www.chatlist.su\_inc\js\showSmiles.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/smilesClear.js
+File Name: D:\enf\www.chatlist.su\_inc\js\smilesClear.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/smilesPermit.js
+File Name: D:\enf\www.chatlist.su\_inc\js\smilesPermit.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/sys.js
+File Name: D:\enf\www.chatlist.su\_inc\js\sys.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/textareaSubmit.js
+File Name: D:\enf\www.chatlist.su\_inc\js\textareaSubmit.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/translit.js
+File Name: D:\enf\www.chatlist.su\_inc\js\translit.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/trivia.js
+File Name: D:\enf\www.chatlist.su\_inc\js\trivia.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/ui.js
+File Name: D:\enf\www.chatlist.su\_inc\js\ui.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/validate.js
+File Name: D:\enf\www.chatlist.su\_inc\js\validate.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/js/webrtc.js
+File Name: D:\enf\www.chatlist.su\_inc\js\webrtc.js
+Content Type: application/javascript
+
+Uri: https://www.chatlist.su/_inc/swf/HangOn.swf
+File Name: D:\enf\www.chatlist.su\_inc\swf\HangOn.swf
+Content Type: application/x-shockwave-flash
+
+Uri: https://www.yandex.ru/cycounter?www.chatlist.su
+File Name: D:\enf\www.chatlist.su\cycounter
+Content Type: image/png
+
+Uri: https://yandex.st/share/share.js
+File Name: D:\enf\www.chatlist.su\share\share.js
+Content Type: application/x-javascript
+

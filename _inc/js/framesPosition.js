@@ -1,0 +1,19 @@
+function framesPosition(pos)
+{
+	if(pos=='left')
+	{
+		$('#msgContainer').css('right','0');
+		$('#msgContainer').css('left','auto');
+		$('#nicksContainer').css('right','auto');
+		$('#nicksContainer').css('left','0');
+		$('#msgBanner').css('right','18px');
+	}
+	else
+	{
+		$('#msgContainer').css('right','auto');
+		$('#msgContainer').css('left','0');
+		$('#nicksContainer').css('right','0');
+		$('#nicksContainer').css('left','auto');
+		$('#msgBanner').css('right','238px');
+	}
+}
